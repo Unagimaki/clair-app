@@ -1,0 +1,16 @@
+.title_container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+.title {
+    font-size: min(3.57vw, 50px);
+    font-weight: 600;
+}
+
+@media (max-width: 425px) {
+    .title {
+        font-size: 9.41vw;
+    }
+}

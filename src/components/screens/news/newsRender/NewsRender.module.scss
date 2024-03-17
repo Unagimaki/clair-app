@@ -1,0 +1,16 @@
+@media (min-width: 375px) {
+    .inner {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        // grid-template-rows: repeat(auto, 29.29vw);
+        gap: 0.71vw;    
+    }
+}
+
+@media (max-width: 374px) {
+    .inner {
+        display: flex;
+        flex-direction: column;
+        gap: 3.21vw;   
+    }
+}

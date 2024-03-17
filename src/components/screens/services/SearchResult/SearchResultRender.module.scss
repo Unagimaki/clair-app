@@ -1,0 +1,17 @@
+.container {
+    display: flex;
+}
+.container::-webkit-scrollbar { display: none; }
+
+@media (min-width: 375px) {
+    .container {
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+}
+@media (max-width: 374px) {
+    .container {
+        margin-bottom: 11.7%;
+        overflow: auto;
+    }
+}

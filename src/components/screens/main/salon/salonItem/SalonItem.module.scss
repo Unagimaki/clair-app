@@ -1,0 +1,39 @@
+.container,
+.info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container {
+    flex-direction: column;
+    .info { align-items: center; }
+    .adress, .map_button { font-weight: 600; }
+    .map_button { aspect-ratio: 2; }
+    .image { width: 100%; }
+}
+
+@media (min-width: 375px) {
+    .container { width: min(47.14vw, 660px); }
+    .container:not(:last-child) { margin-right: 0.86vw; }
+    .adress { font-size: min(1.43vw, 20px); }
+    .map_button {
+        height: min(3.07vw, 43px);
+        border: 0.15vw solid black;
+        border-radius: 2.14vw;
+        font-size: min(1.14vw, 16px);
+    }
+    .image { margin-bottom: 1.14vw; }
+}
+
+@media (max-width: 374px) {
+    .container { width: 87.97vw; }
+    .container:not(:last-child) { margin-right: 2.41vw; }
+    .adress { font-size: 5.35vw; }
+    .map_button {
+        width: 49.07vw;
+        height: 11.5vw;
+        font-size: 4.28vw;
+        border: 0.54vw solid black;
+        border-radius: 8.02vw;
+    }
+}

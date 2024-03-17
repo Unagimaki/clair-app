@@ -1,0 +1,17 @@
+.container {
+    width: 100%;
+}
+.inner {
+    text-align: left;
+    font-weight: 600;
+}
+@media (min-width: 375px) {
+    .inner {
+        font-size: 3.57vw;
+    }
+}
+@media (max-width: 374px) {
+    .inner {
+        font-size: 8vw;
+    }
+}

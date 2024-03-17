@@ -1,0 +1,108 @@
+.section {
+  @media screen and (max-width: 600px) {
+
+    svg {
+      position: absolute;
+      left: 2vw;
+      top: 5vw;
+    }
+
+    user-select: none;
+
+    position: fixed;
+    z-index: 10;
+    background: #F78FFA;
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    main {
+      position: fixed;
+      bottom: 0;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      h1 {
+        text-align: center;
+        margin-bottom: 2vw;
+        font-size: 7.5vw;
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+    }
+
+    form {
+
+      background: #FFFFFF;
+      width: 90vw;
+      height: 40vh;
+
+      border-top-right-radius: 30px;
+      border-top-left-radius: 30px;
+
+      padding: 2vh 0 5vh 0;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 3vw;
+
+      input {
+        background: none;
+
+        width: 90%;
+
+        padding: 3vw;
+
+        outline: 1px solid black;
+        border-radius: 30px;
+
+        &:focus {
+          outline: 2px solid black;
+        }
+
+        &:valid {
+          outline: 1px solid black;
+          background: white;
+        }
+
+        &:invalid {
+          //outline: 2px solid #F00;
+
+        }
+
+        &:hover {
+          cursor: pointer;
+        }
+
+      }
+
+      input[type='submit'] {
+        background: #1B1B1A;
+        margin-top: 1vw;
+        width: 60%;
+      }
+
+
+      p {
+        width: 80vw;
+        text-align: center;
+      }
+
+      small {
+        position: absolute;
+        bottom: 3.5vh;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

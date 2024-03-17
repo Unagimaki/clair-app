@@ -1,0 +1,167 @@
+.secondary_container,
+.category_container,
+.inner,
+.info_container,
+.categories,
+.cost_container,
+.buttons_container,
+.amount_button,
+.addToCart_buttom {
+    display: flex;
+}
+
+.info_container,
+.secondary_container {
+    flex-direction: column;
+}
+
+.info_container,
+.buttons_container,
+.amount_button,
+.category_container {
+    justify-content: space-between;
+}
+.category_container,
+.inner {
+    width: 100%;
+}
+.cost_container,
+.amount_button,
+.filter_title,
+.title {
+    font-weight: 600;
+}
+
+
+.inner {
+    background-color: #fff;
+    position: relative;
+    justify-content: flex-end;
+    align-items: center;
+}
+.images_container {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.main_image {
+    height: inherit;
+}
+.secondary_container {
+    position: absolute;
+    display: flex;
+    top: 4%;
+    left: 4%;
+}
+.info_container {
+    width: 46.2%;
+    height: 88.88%;
+}
+.filter {
+    margin-top: min(2.29vw, 32px);
+    margin-bottom: min(1.71vw, 24px);
+}
+
+
+.filter_text,
+.amount_button,
+.declaration,
+.addToCart_buttom,
+.text,
+.category_item {
+    font-size: min(1.14vw, 16px);
+}
+.buttons_container
+.filter_title {
+    margin-bottom: min(0.57vw, 8px);
+}
+.buttons_container {
+    gap: min(0.28vw, 4px);
+}
+.filter_title {
+    font-size: min(1.43vw, 20px);
+}
+.cost_container,
+.title {
+    font-size: min(2.14vw, 30px);
+}
+.title {
+    line-height: 1;
+    margin-top: min(1.67vw, 24px);
+    margin-bottom: min(1.67vw, 24px);
+}
+.current_cost {
+    margin-right: min(0.71vw, 10px);
+}
+
+.prev_cost {
+    color: #D7D7D7;
+    text-decoration: line-through;
+}
+
+.amount_button,
+.addToCart_buttom,
+.inner {
+    border-radius: min(2.14vw, 30px);
+}
+
+.amount_button {
+    align-items: center;
+    width: min(7.64vw, 107px);
+    height: min(3.93vw, 55px);
+    border: min(0.15vw, 2px) solid black;
+    .decrement {
+        border-radius: min(2.14vw, 30px) 0 0 min(2.14vw, 30px);
+    }
+    .increment {
+        border-radius: 0 min(2.14vw, 30px) min(2.14vw, 30px) 0;
+    }
+}
+.amount_button button {
+    width: 32%;
+    height: 100%;
+}
+.amount_button button:active {
+    background-color: #000;
+    color: #fff;
+}
+.addToCart_buttom {
+    align-items: center;
+    width: min(34.5vw, 483px);
+    height: min(3.93vw, 55px);
+    padding-left: min(2.14vw, 30px);
+    color: #fff;
+    background: #1B1B1A url('../../../../../../../public/images/UI/arrow-light.svg') no-repeat 92% / 14%;
+}
+.declaration {
+    display: block;
+    color: #A9A9A9;
+    text-decoration: underline;
+}
+.buttons_container {
+    margin-top: min(1.07vw, 15px);
+}
+
+
+@media (min-width: 375px) {
+    .container {
+        margin-top: min(4.03vw, 58px);
+        margin-bottom: min(4.44vw, 64px);
+    }
+    .inner {
+        padding-right: min(3vw, 42px);
+    }
+    .secondary_image,
+    .secondary_image img {
+        border-radius: min(0.86vw, 12px);
+    }
+    .inner {
+        height: min(57.14vw, 800px);
+    }
+    .secondary_container { gap: min(0.57vw, 8px); }
+    .secondary_image {
+        width: min(5.36vw, 75px);
+        border: 1px solid black;
+    }
+}

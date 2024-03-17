@@ -1,0 +1,14 @@
+.container {
+  width: 100%;
+  margin-bottom: 1.71vw;
+}
+.services_inner {
+  background: linear-gradient(180deg, #FFF 0%, #FFEDFF 100%);
+}
+
+@media (min-width: 375px) {
+  .services_inner { border-radius: 2.14vw; }  
+}
+@media (max-width: 375px) {
+  .services_inner { border-radius: 8.02vw; }
+}

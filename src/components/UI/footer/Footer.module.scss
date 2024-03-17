@@ -1,0 +1,74 @@
+.footer,
+.inner,
+.info,
+.logo_container { display: flex; }
+
+.inner,
+.info,
+.logo_container { justify-content: space-between; }
+
+.info,
+.logo_container { flex-direction: column; }
+
+.button, .number { font-weight: 600; line-height: 1; }
+
+.footer {
+  height: min(24.57vw, 344px);
+  color: #fff;
+  background-color: #1B1B1A;
+  border-radius: 2.14vw 2.14vw 0 0;
+  justify-content: center;
+  align-items: center;
+  .inner {
+    width: 96.27%;
+    height: 75.29%;
+      .number {
+        margin-bottom: 4%;
+        line-height: 1;
+      }
+      .icon_link { width: min(3vw, 43px); }
+      .icon_link:not(:last-child) { margin-right: min(0.29vw, 12px); }
+      .text { line-height: 1.2; }
+      .text a { text-decoration: underline; }
+  }
+}
+.logo_container {
+  align-items: flex-end;
+  .button {
+    position: relative;
+    background-color: #F8C439;
+    color: #000;
+    width: min(19.21vw, 269px);
+    aspect-ratio: 2.56;
+    padding: 8.5% 0% 13% 9%;
+    border-radius: min(2.14vw, 30px);
+    font-size: min(1.43vw, 20px);
+    text-align: left;
+    text-transform: uppercase;
+  }
+  .button img {
+    width: 56.13%;
+    top: -45%;
+    right: -10%;
+    position: absolute;
+  } 
+}
+
+@media (min-width: 375px) {
+  .text { font-size: min(1.43vw, 20px); }
+  .logo { width: min(6.67vw, 93.4px); }
+  .number { font-size: min(2.86vw, 40px); }
+  .text { font-size: min(0.86vw, 12px); }
+
+}
+
+@media (max-width: 374px) {
+  .footer { height: 40.11vw; }
+  .logo { width: 18.72vw; }
+  .number { font-size: 5.35vw; }
+  .text { font-size: 3.21vw; }
+  .inner { text-align: right; }
+  .info { order: 2; }
+  .logo_container { order: 1; }
+  .button, .icon_link { display: none; }
+}

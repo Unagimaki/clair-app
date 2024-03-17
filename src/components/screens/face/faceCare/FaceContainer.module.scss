@@ -1,0 +1,95 @@
+.container,
+.inner,
+.items_container,
+.button,
+.items_list {
+    display: flex;
+}
+.container,
+.button {
+    align-items: center;
+}
+
+.inner,
+.items_container,
+.button {
+    justify-content: space-between;
+}
+
+.items_container,
+.items_list { flex-direction: column; }
+
+.container {
+    background-color: #fff;
+    justify-content: center;
+}
+
+.button {
+    font-weight: 600;
+}
+
+
+
+@media (min-width: 375px) {
+    .container,
+    .button { border-radius: min(2.14vw, 30px); }
+
+    .container {
+        height: min(39.64vw, 555px);
+        margin-bottom: min(1.14vw, 16px);
+    }
+    .inner {
+        height: 85.59%;
+        width: 91.89%;
+    }
+    .items_list {
+        margin-bottom: min(10.64vw, 149px);
+        gap: min(1.14vw, 16px);
+    }
+    .button {
+        width: 100%;
+        height: min(3.93vw, 55px);
+        padding-left: min(2.14vw, 30px);
+        color: #fff;
+        font-size: min(1.14vw, 16px);
+        background: #1B1B1A url('../../../../../public/images/faceCare/arrow.svg') no-repeat 92% / 14%;
+    }
+    .items_container { width: 45.27%; }
+    .text {
+        width: 42.19%;
+        font-size: min(1.43vw, 20px);
+    }
+}
+
+@media (max-width: 374px) {
+    .container, .button { border-radius: 8vw; }
+    .container {
+        padding: 8.56% 1%;
+        margin-bottom: 3.21vw;
+    }
+    .inner {
+        width: 85%;
+        margin: 0 auto;
+    }
+    .button_container {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .button {
+        width: 78%;
+        color: #000;
+        font-size: 4.28vw;
+        border: 2px solid black;
+        background: url('../../../../../public/images/faceCare/arrow-black.svg') no-repeat 85% / 10%;
+        padding: 3.8% 9.4%;
+    }
+    .text {
+        font-size: 4.28vw;
+        margin-bottom: 5.35vw;
+    }
+    .items_container,
+    .text { width: 100%; }
+    .inner { flex-direction: column; }
+}

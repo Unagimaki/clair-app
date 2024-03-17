@@ -1,0 +1,14 @@
+.inner {
+    display: grid;
+    grid-gap: 0.71vw;
+    position: relative;
+    margin-bottom: 1.71vw;  
+    grid-template-columns: 8.5fr 5fr;
+}
+
+@media (max-width: 374px) {
+    .inner {
+        display: flex;
+        flex-direction: column;
+    }
+}

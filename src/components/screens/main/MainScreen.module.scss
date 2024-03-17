@@ -1,0 +1,85 @@
+.screen,
+.sortContainer { display: flex; align-items: center; }
+
+.text, .title { font-weight: 600; }
+.screen {
+  min-height: 100vh;
+  flex-direction: column;
+  
+  .container {
+    max-width: 1340px;
+    width: 95.71%;
+    margin: 0 auto;
+  }
+
+  .title {
+    width: 100%;
+    color: #1B1B1A;
+    text-transform: uppercase;
+    white-space: nowrap;
+    text-align: left;
+    .title_text { padding-left: 12.5%; }
+  }
+}
+.sortContainer {
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.text {
+  font-size: min(5.71vw, 80px);
+  margin-top: min(9.14vw, 128px);
+  margin-bottom: min(9.14vw, 128px);
+  line-height: 1.3;
+}
+.text span {
+  z-index: 1;
+  position: relative;
+}
+.text span:first-child:before { background-color: #F8C439; }
+.text span:last-child::before { background-color: #48A8DD; }
+.text span::before {
+  content: '';
+  position: absolute;
+  width: 105%;
+  height: 95%;
+  left: -3%;
+  top: 13%;
+  z-index: -1;
+  border-radius: min(5.07vw, 71px);
+}
+
+@media (min-width: 375px) {
+  .screen {
+    background:
+      url('../../../../public/images/mainBackground/rainbow.png') 68.93vw 10.64vw / 29.43vw no-repeat;
+      // url('../../../../public/images/mainBackground/girl.png') 58.29vw 238.14vw / 36.5vw no-repeat;
+      background-color: #F78FFA;
+  }
+  .title {
+    margin-top: 3.36vw;
+    font-size: min(5.71vw, 80px);
+  }
+  .rainbow_image {
+    top: 10.64vw;
+    right: 2vw;
+    width: min(29.43vw, 412px);  
+  }
+}
+
+@media (max-width: 374px) {
+  .screen {
+    background:
+      url('../../../../public/images/mainBackground/rainbow.png') 34.84vw 20.68vw / 66.52vw no-repeat;
+      // url('../../../../public/images/mainBackground/girl.png') 47.27vw 626.41vw / 45.72vw no-repeat;
+    background-color: #F78FFA;
+  }
+  .title {
+    margin-top: 4.55vw;
+    font-size: 10.7vw;
+  }
+  .rainbow_image {
+    top: 18.64vw;
+    right: 0vw;
+    width: 69.52vw;  
+  }
+}

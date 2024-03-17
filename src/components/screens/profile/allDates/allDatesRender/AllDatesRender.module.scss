@@ -1,0 +1,30 @@
+.container,
+.inner,
+.before,
+.after {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.container {
+  align-items: center;
+  font-weight: 600;
+}
+
+@media (min-width: 375px) {
+  .inner { width: min(47.36vw, 663px); }
+  .title { font-size: min(3.57vw, 50px); }
+  .after { margin-bottom: min(4.57vw, 64px); }
+  .before { margin-bottom: min(4vw, 56px); }
+    
+  .before,
+  .after { gap: min(0.86vw, 12px); }
+}
+
+@media (max-width: 374px) {
+  .before,
+  .after { gap: 3.21vw; }
+  .before { margin-bottom: 9.63vw; }
+  .after { margin-bottom: 14.44vw; }
+  .title { font-size: 8.02vw; }
+}

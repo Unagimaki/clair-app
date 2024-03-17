@@ -1,0 +1,23 @@
+.container {
+    overflow: auto hidden;
+    .line {
+        display: flex;
+        align-items: center;
+        width: min-content;
+    }
+}
+.container::-webkit-scrollbar {
+    display: none;
+}
+
+@media (min-width: 375px) {
+    .line {
+        gap: 0.86vw;
+    }
+}
+
+@media (max-width: 374px) {
+    .line {
+        gap: 3.21vw;
+    }
+}

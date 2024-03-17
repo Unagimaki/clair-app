@@ -1,0 +1,124 @@
+.container,
+.inner,
+.button_container,
+.date_inner,
+.info_container {
+    display: flex;
+}
+
+.inner, 
+.button_container,
+.info_container {
+    justify-content: space-between;
+}
+
+.info_container {
+    flex-direction: column;
+}
+
+.container {
+    background-color: #fff;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+}
+
+.procedure { line-height: 1; }
+
+.day {
+    position: relative;
+}
+.day::before {
+    content: '';
+    position: absolute;
+    display: block;
+    background-color: #000;
+    height: 70%;
+    top: 20%;
+}
+
+.subtitle { color: #48A8DD; text-transform: uppercase; }
+
+@media (min-width: 375px) {
+    .container,
+    .button {
+        border-radius: min(2.14vw, 30px);
+    }
+    .inner {
+        width: 90.65%;
+        height: 78.35%;
+    }
+    .button_container {
+        flex-direction: column;
+        text-align: right;
+    }
+    .container { height: min(13.86vw, 194px); }
+    .procedure { font-size: min(2.14vw, 30px); }
+
+    .date_inner,
+    .cost {
+        font-size: min(1.43vw, 20px);
+    }
+    .day {
+        margin-right: 1vw;
+    }
+    .day::before {
+        left: 112%;
+        width: min(0.14vw, 2px);
+    }
+    .subtitle,
+    .adress,
+    .master,
+    .button {
+        font-size: min(1.14vw, 16px);
+    }
+    .button {
+        border: min(0.15vw, 2px) solid black;
+        width: min(9.79vw, 137px);
+        height: min(3.07vw, 43px);
+    }
+}
+
+@media (max-width: 374px) {
+    .inner {
+        flex-direction: column;
+        width: 83.15%;
+        height: 82.94%;
+    }
+    .container,
+    .button {
+        border-radius: 8.02vw;
+    }
+    .button_container {
+        align-items: center;
+    }
+    .container { height: 67.38vw; }
+
+    .date_inner,
+    .cost,
+    .procedure {
+        font-size: 5.35vw;
+    }
+    .subtitle {
+        margin-bottom: 5.61vw;
+    }
+    .day {
+        margin-right: 3.34vw;
+    }
+    .day::before {
+        width: 0.53vw;
+        left: 112%;
+    }
+
+    .subtitle,
+    .adress,
+    .master,
+    .button {
+        font-size: 4.28vw;
+    }
+    .button {
+        border: 0.55vw solid black;
+        width: 36.63vw;
+        height: 11.5vw;
+    }
+}

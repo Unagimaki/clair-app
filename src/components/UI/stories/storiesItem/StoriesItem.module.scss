@@ -1,0 +1,38 @@
+.container {
+    max-height: 420px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    overflow: auto;
+    .title {
+        position: absolute;
+        top: 4%;
+        left: 6%;
+        color: #fff;
+        width: min-content;
+        line-height: 1;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+}
+.container::-webkit-scrollbar { display: none; }
+.container:not(:last-child) { margin-right: 0.86vw; }
+
+@media (min-width: 375px) {
+    .container {
+        width: min(22.5vw, 324px);
+        height: 29.17vw;    
+    }
+    .title { font-size: min(2.14vw, 30px); }
+}
+
+@media (max-width: 374px) {
+    .container {
+        width: 94.92vw;
+        height: 115.24vw;
+    }
+    .title { font-size: 8.02vw; }
+    .container:not(:last-child) {
+        margin-right: 0;
+    }
+}

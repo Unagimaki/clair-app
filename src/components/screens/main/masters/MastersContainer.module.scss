@@ -1,0 +1,15 @@
+.container {
+    width: 100%;
+    overflow: auto;
+    margin-bottom: 1.71vw;
+}
+.container::-webkit-scrollbar {
+    display: none;
+}
+.line {
+    position: relative;
+    display: flex;
+    width: min-content;
+    gap: 10px;
+}
+

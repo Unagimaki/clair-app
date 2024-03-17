@@ -1,0 +1,35 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (min-width: 375px) {
+    .container {
+        width: min(10.93vw, 153px);
+        height: min(3.07vw, 43px);
+        border: min(0.15vw, 2px) solid black;
+        border-radius: min(2.14vw, 30px);   
+        margin-top: min(6.07vw, 85px);     
+    }
+    .text { font-size: min(1.14vw, 16px); }
+    .img {
+        margin-right: min(1.14vw, 16px);
+        width: min(1.77vw, 24.75px);
+    }
+}
+
+@media (max-width: 374px) {
+    .container {
+        width: 40.91vw;
+        height: 11.5vw;
+        border: 0.55vw solid black;
+        border-radius: 8.02vw;
+        margin-top: 5.61vw;   
+    }
+    .text { font-size: 4.28vw; }
+    .img {
+        margin-right: 4.28vw;
+        width: 6.62vw;
+    }
+}

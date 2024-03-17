@@ -1,0 +1,63 @@
+.inner,
+.adress_container {
+    display: flex;
+    justify-content: space-between;
+}
+.adress,
+.name {
+    font-weight: 600;
+}
+.container {
+    position: relative;
+    .favourite_icon {
+        position: absolute;
+        width: min(1.93vw, 27px);
+        height: min(1.64vw, 23px);
+        top: 4%;
+        right: 8%;
+    }
+    .inner {
+        flex-direction: column;
+        .adress_container {
+            width: 59.26%;
+        }
+        .adress_container img {
+            width: min(22%, 18px);
+        }
+    }
+}
+
+@media (min-width: 375px) {
+    .container {
+        width: min(23.14vw, 324px);
+    }
+    .name, .profession {
+        font-size: min(1.43vw, 20px);
+    }
+    .adress {
+        font-size: min(1.14vw, 16px);
+    }
+    .adress_container img {
+        margin-right: min(3.21vw, 12px);
+    }
+    .image_container {
+        margin-bottom: min(0.71vw, 16px);
+    }
+    .profession {
+        margin-bottom: min(1vw, 14px);
+    }    
+}
+@media (max-width: 374px) {
+    .container {
+        width: 86.63vw;
+    }
+    .adress_container img {
+        margin-right: 2.07vw;
+    }
+    .image_container {
+        margin-bottom: 4.28vw;
+    }
+    .profession {
+        margin-bottom: 3.74vw;
+    }
+}

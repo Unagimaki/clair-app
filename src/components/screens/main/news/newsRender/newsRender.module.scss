@@ -1,0 +1,80 @@
+.container,
+.header,
+.button { display: flex; }
+
+.container,
+.button { justify-content: center; }
+
+.container:first-child {
+    grid-row: span 2;
+    padding-bottom: min(6.71vw, 93px);
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 2.14vw;
+    position: relative;
+    z-index: 2;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    .header {
+        justify-content: space-between;
+        .button {
+            border: 0.14vw solid black;
+            border-radius: 2.14vw;
+            flex-shrink: 0;
+            aspect-ratio: 3;
+            height: 3vw;
+            max-height: 43px;
+            align-items: center;
+        }
+        .button img { width: 70.31%; }
+        .title { font-weight: 600; }
+    }
+    .text { width: 70%; }
+}
+
+@media (min-width: 375px) {
+    .container {
+        padding-top: min(2.21vw, 31px);
+        background-size: 29%;
+    }
+    .container:first-child { background-size: 35%; }
+    .title {
+        font-size: min(2.14vw, 30px);
+        margin-bottom: min(1.71vw, 24px);
+    }
+    .text {
+        min-width: min(1.43vw, 20px);
+        font-size: min(1.43vw, 20px);
+    }
+    .inner {
+        width: 92.93%;
+        height: 64.77%;
+    }
+}
+
+@media (max-width: 374px) {
+    .container:not(:first-child) { height: 50.27vw; }
+    .container:first-child { padding-bottom: 48.4vw; }
+    .container {
+        padding-top: 8.29vw;
+        border-radius: 8.02vw;
+        background-size: 55%;
+    }
+    .inner { width: 81.69%; }
+    .button { display: none; }
+    .title {
+        font-size: 8.02vw;
+        line-height: 1;
+        margin-bottom: 6.42vw;
+    }
+    .text {
+        font-size: 5.35vw;
+        margin: 0;
+        -webkit-line-clamp: 5;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+}

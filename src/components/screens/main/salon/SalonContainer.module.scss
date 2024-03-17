@@ -1,0 +1,10 @@
+.container {
+    overflow: auto;
+    margin-bottom: 1.5vw;
+}
+.container::-webkit-scrollbar { display: none; }
+
+.line {
+    display: flex;
+    width: max-content;
+}

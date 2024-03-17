@@ -1,0 +1,54 @@
+.container {
+    width: 100%;
+    overflow: auto;
+    position: relative;
+}
+.container::-webkit-scrollbar {
+    display: none;
+}
+.line {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: min-content;
+    transition: all .2s linear;
+    transform: translateX(0);
+}
+
+.slider_dotts {
+    position: sticky;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 100%;
+    bottom: 0%;
+    left: 0%;
+    .dotts_container {
+        display: flex;
+        align-items: center;
+    }
+    .dott {
+        display: block;
+        background-color: #000;
+        border-radius: 50%;
+        transition: all .2s linear;
+    }
+    .dott:not(:last-child) {
+        margin-right: 6px;
+    }
+}
+
+@media (min-width: 375px) {
+    .slider_dotts {
+        display: none;
+    }
+}
+
+@media (max-width: 374px) {
+    .container {
+        overflow: hidden;
+    }
+    .slider_dotts {
+        display: flex;
+    }
+}

@@ -1,0 +1,41 @@
+.container, .inner { display: flex; }
+
+.container {
+    align-items: center;
+    justify-content: center;
+    max-height: 84px;
+}
+.inner {
+    justify-content: space-between;    
+    width: 95.52%;
+    font-weight: 600;
+}
+
+@media (min-width: 375px) {
+    .container {
+        height: 6vw;
+        border: min(0.15vw, 2px) solid black;
+        border-radius: min(3.57vw, 50px);
+    }
+    .title { font-size: min(1.43vw, 20px); }
+    .button {
+        width: min(5.04vw, 70.5px);
+        background: url('../../../../public/images/UI/sortMenu/arrow.svg') no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+}
+@media (max-width: 374px) {
+    .container {
+        height: 14.97vw;
+        border: 0.55vw solid black;
+        border-radius: 13.37vw;
+    }
+    .title { font-size: 4.28vw; }
+    .button {
+        width: 6.68vw;
+        background: url('../../../../public/images/UI/sortMenu/mobile-arrow.svg') no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+}

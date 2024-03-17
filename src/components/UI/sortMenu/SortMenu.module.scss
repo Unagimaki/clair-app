@@ -1,0 +1,11 @@
+.container {
+    display: flex;
+    overflow: auto;
+}
+.container::-webkit-scrollbar {
+    display: none;
+}
+
+.container div:not(:last-child) {
+    margin-right: 4px;
+}

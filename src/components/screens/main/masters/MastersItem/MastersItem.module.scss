@@ -1,0 +1,45 @@
+.container, .info { display: flex; }
+.container, .info { justify-content: space-between; }
+.info, .button { align-items: center; }
+
+.button { aspect-ratio: 2.65; }
+
+.container {
+    width: 23.14vw;
+    flex-direction: column;
+    position: relative;
+    .favourite_icon {
+        position: absolute;
+        width: 8.33%;
+        height: 5.48%;
+        top: 4%;
+        right: 8%;
+    }
+    .photo { margin-bottom: 5%; }
+    .photo img { width: 100%; }
+    .name { font-weight: 600; }
+    .button {
+        height: min(3.07vw, 43px);
+        justify-content: center;
+    }
+    .button div { width: 80%; }
+}
+
+
+@media (min-width: 375px) {
+    .container { max-width: 323px; }
+    .name, .profession { font-size: min(1.43vw, 20px); }
+    .button {
+        font-size: min(1.14vw, 16px);
+        border-radius: 2.14vw;
+        border: min(0.15vw, 2px) solid black;
+    }
+}
+@media (max-width: 374px) {
+    .container { width: 91.18vw; }
+    .button {
+        font-size: 3.43vw;
+        border-radius: 8vw;
+        border: 0.55vw solid black;
+    }
+}

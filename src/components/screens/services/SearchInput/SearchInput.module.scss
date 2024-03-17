@@ -1,0 +1,23 @@
+.input {
+    background-color: #fff;
+    background-image: url('../../../../../public//images/search/search.svg');
+    background-repeat: no-repeat;
+    background-position: 5%;
+}
+@media (min-width: 375px) {
+    .input {
+        background-size: min(3.14vw, 44px);
+        height: min(7.14vw, 100px);
+        width: min(47.36vw, 663px);
+        border-radius: min(5vw, 70px);
+    }
+}
+
+@media (max-width: 374px) {
+    .input {
+        width: 100%;
+        height: 19.52vw;
+        border-radius: 18.72vw;
+        background-size: 9.63vw;
+    }
+}

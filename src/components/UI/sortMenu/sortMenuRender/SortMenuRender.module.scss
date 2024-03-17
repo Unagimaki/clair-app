@@ -1,0 +1,35 @@
+.container,
+.container_selected {
+    max-height: 43px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+}
+.container_selected {
+    background: black;
+    color: #fff;
+}
+
+@media (min-width: 375px) {
+    .container,
+    .container_selected {
+        height: 3.07vw;
+        border-radius: min(2.14vw, 30px);
+        padding-left: min(2.14vw, 30px);
+        padding-right: min(2.14vw, 30px);
+        font-size: min(1.11vw, 16px);
+        border: 0.15vw solid black;
+    }
+}
+
+@media (max-width: 374px) {
+    .container,
+    .container_selected {
+        height: 11.5vw;
+        border-radius: 8vw;
+        padding: 0 8vw;
+        font-size: 4.28vw;   
+        border: 0.53vw solid black; 
+    }
+}

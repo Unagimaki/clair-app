@@ -1,0 +1,60 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 4.14vw 0;
+}
+.buttons {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.pageButton {
+    border-radius: 50%;
+    font-weight: 600;
+    aspect-ratio: 1;
+}
+.pageButton:not(:last-child) {
+    margin-right: 0.57vw;
+}
+.pageNext {
+    background: url('../../../../public/images/shop/arrow.svg') no-repeat center;
+    background-size: 80%;
+    aspect-ratio: 2.97;
+}
+
+@media (min-width: 375px) {
+    .buttons {
+        margin-top: min(1.71vw, 24px);
+        margin-bottom: min(4vw, 56px);
+    }
+    .pageNext,
+    .pageButton {
+        height: min(3.07vw, 43px);
+        border: min(0.15vw, 2px) solid black;
+    }
+    .pageNext {
+        border-radius: min(2.14vw, 30px);
+    }
+    .pageButton {
+        font-size: min(1.14vw, 16px);
+    }
+}
+
+@media (max-width: 374px) {
+    .buttons {
+        margin: 6.42vw 0 14.97vw;
+    }
+    .pageButton,
+    .pageNext {
+        height: 11.5vw;
+        border: 0.55vw solid black;
+    }
+    .pageButton {
+        font-size: 4.28vw;
+    }
+    .pageNext {
+        border-radius: 8.02vw;
+    }
+}

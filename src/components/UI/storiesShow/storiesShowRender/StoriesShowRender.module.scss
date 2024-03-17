@@ -1,0 +1,31 @@
+.container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 98;
+    background-color: rgba(0, 0, 0, 0.8);
+    animation: show .4s;
+    display: flex;
+    align-items: center;
+}
+.container::-webkit-scrollbar {
+    display: none;
+}
+.inner {
+    display: flex;
+    align-items: center;
+    width: min-content;
+    transition: all .6s linear;
+    height: min(45.5vw, 637px);
+}
+
+@keyframes show {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

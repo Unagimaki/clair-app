@@ -1,0 +1,28 @@
+.container {
+    white-space: nowrap;
+    padding: 1.8% 4.6%;
+    font-weight: 600;
+}
+
+
+@media (min-width: 375px) {
+    .container {
+        font-size: min(1.14vw, 16px);
+        border-radius: min(2.14vw, 30px);
+        border: min(0.15vw, 2px) solid black;
+    }
+    .container:not(:last-child) {
+        margin-right: 1%;
+        margin-bottom: 1%;
+    }
+}
+
+@media (max-width: 374px) {
+    .container {
+        font-size: 4.28vw;
+        border-radius: 8.02vw;
+        border: 0.55vw solid black;
+        padding: 3.21vw 8.02vw;
+    }
+    .container:not(:last-child) { margin-right: 1%; }
+}
